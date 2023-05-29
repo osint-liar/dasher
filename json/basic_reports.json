@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Collected Pages",
+        "description": "A report that contains just the captured web pages",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/webpages.html"
+    },
+    {
+        "title": "Collected Images",
+        "description": "A report that contains just the captured images",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/images.html"
+    },
+    {
+        "title": "Collected Video",
+        "description": "A report that contains just the captured videos",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/videos.html"
+    },
+    {
+        "title": "Collected Messages",
+        "description": "A report that contains just the captured messages",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/webpage.html"
+    },
+    {
+        "title": "Captured Keywords",
+        "description": "A report that contains the captured content with found keywords",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/keywords.html"
+    },
+    {
+        "title": "Captured Emails",
+        "description": "A report that contains just the captured sources that have email addresses",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/htmls/emails.html"
+    }
+]

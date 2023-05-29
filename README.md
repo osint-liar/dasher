@@ -1,2 +1,2 @@
 # templates-for-osint-reports
-Set set of templates that are available for reporting
+An extensible reporting system that uses Mustache to help create and maintain reports from OSINT LIAR easier.
