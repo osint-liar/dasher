@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>OSINT LIAR Analysis Tool</title>
 </head>
-<body>
-    <div>{{ Record }}</div>
+<body>   
+    <ul>
+        {{#Records}}
+            <li>{{ Name }}</li>
+            <li>{{ Value }} </li>
+        {{/Records}}
+    </ul>            
 </body>
 </html>
