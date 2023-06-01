@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LIAR Analysis Tool</title>  
+    </head>
+  
+    <body>
+  
+      <div id="vis"></div>  
+        <script type="text/javascript">
+			function loadScripts(array,callback){
+				let loader = function(src,handler){
+					let script = document.createElement("script");
+					script.src = src;
+					script.onload = script.onreadystatechange = function(){
+						script.onreadystatechange = script.onload = null;
+						handler();
+					}
+					let head = document.getElementsByTagName("head")[0];
+					(head || document.body).appendChild( script );
+				};
+				(function run(){
+					if(array.length!=0){
+						loader(array.shift(), run);
+					}else{
+						callback && callback();
+					}
+				})();	
+			}			
+		
+			const urlParams = new URLSearchParams(window.location.search);
+		    const uuid = urlParams.get('Uuid')
+			const authToken = urlParams.get('AuthToken')
+			// loads scripts from YOUR machine, these also pull from a CDN
+			loadScripts([
+				"http://127.0.0.1:9906/js/vega.js?AuthToken="+authToken.replace(/ /g, '+'),
+				"http://127.0.0.1:9906/js/vega-lite.js?AuthToken="+authToken.replace(/ /g, '+'),
+				"http://127.0.0.1:9906/js/vega-embed.js?AuthToken="+authToken.replace(/ /g, '+')
+			],function(){
+			
+				const fetchData = async() => {
+					const response = await fetch(`http://127.0.0.1:9906/v1/analysis-tool/get?Uuid=${uuid}`, {headers: {'Authorization': `Bearer ${authToken.replace(/ /g, '+')}`}, 'Content-Type': 'application/json'})
+					const data = await response.json()
+					data.Record.Specification.data.url = data.Record.Specification.data.url.replace('{$Uuid}', uuid)
+					data.Record.Specification.data.url = data.Record.Specification.data.url.replace('{$AuthToken}', authToken.replace(/ /g, '+'))			  
+					vegaEmbed('#vis', data.Record.Specification, { actions: { source: false, compiled: false, editor: false }}); 	   
+				};
+				fetchData();
+			});	
+        </script>		
+  </body>
+</html>

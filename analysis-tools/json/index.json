@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Vega Chart IFrame",
+        "description": "Provides",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/analysis-tools/html/vega.html"
+    },
+    {
+        "title": "Single Number",
+        "description": "Provides a singular value within the frame ",
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/analysis-tools/html/single.html"
+    }
+]

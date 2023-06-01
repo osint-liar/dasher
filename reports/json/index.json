@@ -2,31 +2,31 @@
     {
         "title": "Collected Pages",
         "description": "A report that contains just the captured web pages",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/webpages.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/webpages.html"
     },
     {
         "title": "Collected Images",
         "description": "A report that contains just the captured images",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/images.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/images.html"
     },
     {
         "title": "Collected Video",
         "description": "A report that contains just the captured videos",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/videos.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/videos.html"
     },
     {
         "title": "Collected Messages",
         "description": "A report that contains just the captured messages",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/webpage.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/webpage.html"
     },
     {
         "title": "Captured Keywords",
         "description": "A report that contains the captured content with found keywords",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/keywords.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/keywords.html"
     },
     {
         "title": "Captured Emails",
         "description": "A report that contains just the captured sources that have email addresses",
-        "url": "https://osint-liar.github.io/templates-for-osint-reports/html/emails.html"
+        "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/emails.html"
     }
 ]
