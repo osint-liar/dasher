@@ -28,5 +28,10 @@
         "title": "Captured Emails",
         "description": "A report that contains just the captured sources that have email addresses",
         "url": "https://osint-liar.github.io/templates-for-osint-reports/reports/html/emails.html"
+    },
+    {
+        "title": "Missing Person",
+        "description": "A missing persons report",
+        "url": "http://127.0.0.1:9906/static/osint-liar-templates/reports/html/missing_person.html"
     }
 ]
