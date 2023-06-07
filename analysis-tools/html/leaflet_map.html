@@ -46,7 +46,7 @@
               if(record.ContentLatitude && record.ContentLongitude)
               {
 				if(viewSet == false){
-					map.setView([record.ContentLatitude, record.ContentLongitude], 5)
+					map.setView([record.ContentLatitude, record.ContentLongitude], 0)
 					viewSet = true
 				}
 	            const marker = L.marker([record.ContentLatitude, record.ContentLongitude]).addTo(map);
