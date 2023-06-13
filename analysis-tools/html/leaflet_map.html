@@ -40,7 +40,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const uuid = urlParams.get('Uuid')
             const authToken = urlParams.get('AuthToken')
-            const response = await fetch(`http://127.0.0.1:9906/v1/analysis-tool/data-extract?Uuid=${uuid}`, {headers: {'Authorization': `Bearer ${authToken.replace(/ /g, '+')}`}, 'Content-Type': 'application/json'})
+            const response = await fetch(`http://127.0.0.1:9906/v1/analysis-tool/data-extract?Uuid=${uuid}&AuthToken=${authToken}`)
             const data = await response.json()
             data.Records.forEach(record => {
               if(record.ContentLatitude && record.ContentLongitude)
