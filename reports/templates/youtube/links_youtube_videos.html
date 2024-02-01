@@ -1,0 +1,33 @@
+{{#Records}}
+<table>
+    <tr>
+        <td>
+            <img src="{{ContentScreenShot}}" width="240" height="135"/>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Social Media Site</th>
+                    <td>{{ContentDomain}}</td>
+                </tr>
+                <tr>
+                    <th>Captured On</th>
+                    <td>{{ContentCreatedOn}}</td>
+                </tr>
+                <tr>
+                    <th>Profile Url</th>
+                    <td><a href="{{ContentUrl}}" alt="Link to profile at {{ContentUrl}}">{{ContentUrl}}</a></td>
+                </tr>
+                <tr>
+                    <th>{{ContentHashAlgorithm}} Hash</th>
+                    <td>{{ContentHash}}</td>
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>{{ContentNote}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+{{/Records}}

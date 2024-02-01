@@ -1,0 +1,108 @@
+{{#Records}}
+<h1>Record</h1>
+<table>
+    <tr>
+        <td>
+            <img src="{{WebHost}}v1/content/screenshot?Uuid={{ContentUuid}}" width="320" height="260"/>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Social Media Site</th>
+                    <td>{{ContentDomain}}</td>
+                </tr>
+                <tr>
+                    <th>Captured On</th>
+                    <td>{{ContentCreatedOn}}</td>
+                </tr>
+                <tr>
+                    <th>Profile Url</th>
+                    <td><a href="{{ContentUrl}}" alt="Link to profile at {{ContentUrl}}">{{ContentUrl}}</a></td>
+                </tr>
+                <tr>
+                    <th>Content Hash</th>
+                    <td>{{ContentHash}}</td>
+                </tr>
+                <tr>
+                    <th>Content Hash Algorithm</th>
+                    <td>{{ContentHashAlgorithm}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<hr>
+<h1>Images</h1>
+<table>
+    {{#Images}}
+    <tr>
+        <td>
+            <img src="{{WebHost}}v1/content/screenshot?Uuid={{ContentUuid}}" width="320" height="260"/>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Social Media Site</th>
+                    <td>{{ContentDomain}}</td>
+                </tr>
+                <tr>
+                    <th>Captured On</th>
+                    <td>{{ContentCreatedOn}}</td>
+                </tr>
+                <tr>
+                    <th>Profile Url</th>
+                    <td><a href="{{ContentUrl}}" alt="Link to profile at {{ContentUrl}}">{{ContentUrl}}</a></td>
+                </tr>
+                <tr>
+                    <th>{{ContentHashAlgorithm}} Hash</th>
+                    <td>{{ContentHash}}</td>
+                </tr>
+                <tr>
+                    <th>Content Note</th>
+                    <td>{{ContentNote}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {{/Images}}
+</table>
+<hr>
+<h1>Videos</h1>
+<table>
+    {{#Videos}}
+    <tr>
+        <td>
+            <video width="320" height="240" controls>
+                <source src="{{WebHost}}v1/content/raw-file?Uuid={{ContentUuid}}" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Social Media Site</th>
+                    <td>{{ContentDomain}}</td>
+                </tr>
+                <tr>
+                    <th>Captured On</th>
+                    <td>{{ContentCreatedOn}}</td>
+                </tr>
+                <tr>
+                    <th>Profile Url</th>
+                    <td><a href="{{ContentUrl}}" alt="Link to profile at {{ContentUrl}}">{{ContentUrl}}</a></td>
+                </tr>
+                <tr>
+                    <th>{{ContentHashAlgorithm}} Hash</th>
+                    <td>{{ContentHash}}</td>
+                </tr>
+                <tr>
+                    <th>Content Note</th>
+                    <td>{{ContentNote}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {{/Videos}}
+</table>
+</table>
+{{/Records}}

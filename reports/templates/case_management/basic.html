@@ -1,0 +1,50 @@
+{{#Records}}
+<h1>{{Name}}</h1>
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr><td><img src="{{SubjectImageData}}" width="640" height="480"/></td></tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Case Name</th>
+                    <td>{{Name}}</td>
+                </tr>
+                {{#SubjectName}}
+                <tr>
+                    <th>Subject&quot;s Name</th>
+                    <td>{{SubjectName}}</td>
+                </tr>
+                {{/SubjectName}}
+                {{#CaseWorkerName}}
+                <tr>
+                    <th>Case Worker&quot;s Name</th>
+                    <td>{{CaseWorkerName}}</td>
+                </tr>
+                {{/CaseWorkerName}}
+                {{#CaseNumber}}
+                <tr>
+                    <th>Case Number</th>
+                    <td>{{CaseNumber}}</td>
+                </tr>
+                {{/CaseNumber}}
+                {{#CreatedOn}}
+                <tr>
+                    <th>Case Created On</th>
+                    <td>{{CreatedOn}}</td>
+                </tr>
+                {{/CreatedOn}}
+                {{#UpdatedOn}}
+                <tr>
+                    <th>Updated On</th>
+                    <td>{{UpdatedOn}}</td>
+                </tr>
+                {{/UpdatedOn}}
+            </table>
+        </td>
+    </tr>
+</table>
+{{/Records}}
