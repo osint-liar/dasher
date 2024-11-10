@@ -1,4 +1,14 @@
 [
+
+    {
+        "id": "print_screenshots_basic",
+        "title": "Screenshots",
+        "description": "Show all the screenshots",
+        "templateUrl": "{{DasherUrl}}/reports/templates/social_media_profiles/social_media_profiles_links",
+        "sql": "SELECT * FROM ContentSchema WHERE CaseManagementUuid = :CaseManagementUuid ",
+        "dataUrl": "{{WebHost}}v1/analysis-tool/raw-sql?SqlQuery={{SqlQuery}}&CaseManagementUuid={{CaseManagementUuid}}",
+        "active": true
+    },
     {
         "id": "case_management_basic",
         "title": "Basic Case Management Info",
